@@ -19,3 +19,34 @@ info@starhostbd.com
 Development credits:
 iOS XCode Engineering and UI design:
 I.M. Tanjin Ahsan
+
+
+Below are the configurable parameters I have kept: 
+
+ReaderConstants.h the following #define options are available:
+
+READER_FLAT_UI - If TRUE, follows the Fuglyosity of Flat Fad
+(flattens the UI).
+
+READER_SHOW_SHADOWS - If TRUE, a shadow is shown around each page
+and page thumbnail.
+
+READER_ENABLE_THUMBS - If TRUE, a thumbs button is added to the main
+toolbar enabling page thumbnail document navigation.
+
+READER_DISABLE_RETINA - If TRUE, sets the CATiledLayer contentScale
+to 1.0f. This effectively disables retina support and results in
+non-retina device rendering speeds on retina display devices at
+the loss of retina display quality.
+
+READER_ENABLE_PREVIEW - If TRUE, a medium resolution page thumbnail
+is displayed before the CATiledLayer starts to render the PDF page.
+
+READER_DISABLE_IDLE - If TRUE, the iOS idle timer is disabled while
+viewing a document (beware of battery drain).
+
+READER_STANDALONE - If FALSE, a "Done" button is added to the toolbar
+and the -dismissReaderViewController: delegate method is messaged when
+it is tapped.
+
+READER_BOOKMARKS - If TRUE, enables page bookmark support.
